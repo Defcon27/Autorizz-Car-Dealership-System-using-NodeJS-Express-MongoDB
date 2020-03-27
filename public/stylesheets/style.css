@@ -1,0 +1,101 @@
+body {
+  background-color: rgb(241, 238, 238);
+}
+
+.col {
+  background-color: white;
+  margin: 20px;
+}
+
+.col {
+  border-style: solid;
+  border-width: 2.5px;
+  border-color: white;
+  border-radius: 15px;
+}
+
+.col:hover {
+  border-style: solid;
+  border-width: 2.5px;
+  border-color: #5c5757;
+  border-radius: 15px;
+}
+
+.thumbnail img {
+  max-height: 260px;
+  max-width: 472px;
+  margin-left: 23px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.modeltitle {
+  margin-top: 12px;
+  margin-left: 22px;
+}
+
+.info {
+  margin-left: 15px;
+}
+
+.info_first {
+  color: #5c5e62;
+  margin-left: 5.5px;
+}
+
+.description {
+  width: 480px;
+  color: #5c5e62;
+}
+
+.description:hover {
+  width: 480px;
+  font-weight: 400;
+  color: #171a20;
+}
+
+.buy_button {
+  margin: 24px;
+  margin-left: 15px;
+}
+
+#b1 {
+  height: 40px;
+  width: 130px;
+  border-color: #171a20;
+  background-color: white;
+  color: #171a20;
+  border-radius: 25px;
+  border-width: 2.5px;
+}
+
+#b1:hover {
+  height: 40px;
+  width: 130px;
+  border-color: #171a20;
+  background-color: #171a20;
+  color: white;
+  border-radius: 25px;
+  border-width: 2.5px;
+}
+
+#b2 {
+  height: 40px;
+  width: 130px;
+  border-color: white;
+  background-color: #171a20;
+  color: white;
+  border-radius: 25px;
+  border-width: 2px;
+}
+
+#b2:hover {
+  height: 40px;
+  width: 130px;
+  border-color: white;
+  background-color: white;
+  color: #171a20;
+  font-weight: 600;
+  border-radius: 25px;
+  border-width: 2px;
+}
