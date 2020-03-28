@@ -19,8 +19,15 @@
 
 <body>
   <center>
-    <form>
+    <img class="loginlogo" src="/Auto/t1.png" alt="Autorizz">
+  </center>
+
+  <center>
+    <form action="/login" method="post">
       <div class="loginForm">
+
+
+
         <h2 class="title">
           <center>Login
             <hr>
@@ -28,17 +35,20 @@
         </h2>
         <div class="input">
           <div class="form-group userid">
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            <input type="string" name="userid" class="form-control" id="userid" aria-describedby="emailHelp"
               style="border-radius: 25px;" placeholder="  UserID" autocomplete="off">
           </div>
+
           <div class="form-group userid">
-            <input type="password" class="form-control" id="exampleInputPassword1" style="border-radius: 25px;"
+            <input type="password" name="password" class="form-control" id="password" style="border-radius: 25px;"
               placeholder="  Password" autocomplete="off">
           </div>
+
+          <div class="loginButton">
+            <button id="l" type="submit" class="btn btn-outline-dark"> LOGIN </button>
+          </div>
         </div>
-        <div class="loginButton">
-          <button id="l" type="submit" class="btn btn-outline-dark"> LOGIN </button>
-        </div>
+
 
       </div>
     </form>
