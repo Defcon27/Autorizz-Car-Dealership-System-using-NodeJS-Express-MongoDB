@@ -21,13 +21,11 @@ router.post("/", function (req, res, next) {
         else if (docs != null) {
             if (pass == docs.password) {
                 console.log("Login Success");
-                res.redirect("/")
+                res.redirect("/home")
             }
         }
-        else if (docs == null) {
-            console.log("Wrong input");
-            console.log(docs);
-        }
+        console.log("Wrong input");
+
     });
 
 });

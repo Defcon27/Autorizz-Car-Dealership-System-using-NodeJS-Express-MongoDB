@@ -1,5 +1,6 @@
 var express = require("express");
 var router = express.Router();
+router.use(express.static("public"));
 var Model = require("../models/model");
 
 router.get("/shop", function (req, res, next) {
