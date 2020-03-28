@@ -1,0 +1,137 @@
+body{
+    background-color: white;
+}
+
+.col1{
+    width: 600px;
+}
+
+.heading{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+h2{
+    color: #464a50;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+h3{
+    color: #464a50;
+    font-family:'Quicksand', sans-serif;
+}
+
+
+.sidebutton{
+    margin-top: 160px;
+    width: 27px;
+    height: 29px;
+    background-color:#464a50 ;
+    border-radius: 8px;
+}
+
+p{
+    margin: 0;
+}
+
+.priceinfo{
+    color: #34383d;
+    font-size: 34px;
+    font-family:'Quicksand', sans-serif;
+    font-weight: 600;
+    margin-bottom: 0px;
+    margin-top: 40px;
+    margin-left: 390px;
+}
+
+#p1{
+    margin-left: 320px;
+    color: #34383d;
+    font-family:'Quicksand', sans-serif;    
+}
+
+
+#l{
+    margin-top: 30px;
+    margin-left: 260px;
+    width: 280px;
+    border-color: #307cbe;
+    background-color: #307cbe;
+    color: white;
+    border-width: 2px;
+    border-radius: 25px;
+    font-size: 15px;
+}
+
+
+#l:hover{
+    width: 280px;
+    background-color: #262a2e;
+    border-color: #262a2e;
+    color: white;
+    border-width: 2px;
+    border-radius: 25px;
+    font-size: 15px;
+}
+
+.specs{
+    color: #464a50;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.spec2{
+    color: #464a50;
+    font-size: 20px;
+    font-family:'Quicksand', sans-serif;
+}
+
+.spec3{
+    color: #626468;
+    font-size: 17px;
+    font-family:'Quicksand', sans-serif;
+    font-weight: 600;
+}
+
+.specs4{
+    color: #3b3d3f;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-weight: 500;
+    font-size: 33px;
+}
+
+.specs5{
+    color: #626468;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.spec6{
+    width: 100px;
+    color: #626468;
+    font-size: 18px;
+    font-family:'Quicksand', sans-serif;
+    font-weight: 600;
+}
+
+.spec7{
+
+    color: #626468;
+    font-size: 20px;
+    font-family:'Quicksand', sans-serif;
+    font-weight: 600;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+}
+
+.highlights{
+    margin-top: 60px;
+    margin-left: 60px;
+}
