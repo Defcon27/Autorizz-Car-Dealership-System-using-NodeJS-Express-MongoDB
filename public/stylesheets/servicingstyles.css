@@ -81,3 +81,7 @@ body {
     border-radius: 25px;
     font-size: 15px;
 }
+
+.container{
+    margin-left: 180px;
+}
