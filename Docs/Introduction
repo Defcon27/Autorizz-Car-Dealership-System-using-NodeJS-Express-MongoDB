@@ -1,0 +1,138 @@
+AUTOMOBILE DEALERSHIP MANAGEMENT SYSTEM
+
+GENERAL DESCRIPTION
+
+OBJECTIVE:
+The objective of the automobile dealership software is to manage and track the details of vehicle sales, workshop and service, spare parts inventory and sales so the dealership could avoid manual work for managing the information which is very time-consuming and inefficient and for the customer who are the end users they can be in the comfort of their homes to browse and check status of vehicles and spare parts. This system tackles these problems by automating the manual work thus consumes very less time, error-free, additionally provide security and backup to the dealership data and increase the efficiency of the dealership.
+
+SYSTEM CONCEPT:
+The automobile dealership management software is a web-based system that facilitates the management of an automobile dealership with the help of sub systems each handling different functionalities like vehicle sales which maintains and tracks all the details regarding the sale of vehicles, service which tracks the vehicles that are currently being serviced by the dealership, spare inventory which maintains the stocks of the spares in the inventory. This approach of modular solution helps in resolving the bugs faster and increases the pace of development since these can be developed separated but can be tested together. All this combine to ultimately provide the management of information for the dealership so that the dealer could manage business in an effortless manner.
+
+CONCEPT OF OPERATION:
+In this system, the dealer or the customer first needs to authenticate themselves to start using the application. Here dealer can log in with their given ID and password in order to manage the website. The dealer can post the vehicles that needs to be sold by the dealership in vehicle sales. The customers of the dealership can register and log into the website. Here the customers can browse through various vehicles listed on the website which enables the customer to find the vehicle as per his/her requirements. Customers can search vehicles in the sales and can then view the complete specification of each vehicle listing with its features, price, etc. according to their requirements and can book the vehicle by initiating a purchase. Then the customer needs to pay the dealership the price of the property that the customer wants to purchase. After the successful completion of the transaction process, the vehicle will be booked under that customer. The customer can service their vehicle in the dealership and the system tracks this information and informs the customer of pickup. Also, customers can buy spare parts from the dealership with the help of spare part inventory and similarly buy the required components by the customer and can check out.
+
+USER AND USER INTERFACES:
+The automobile dealership management system is a web application designed for any automobile dealership. It has an intuitive and user-friendly interface for both its dealership's owner and its customers. This web application provides a good graphical user interface which provides ease of support to the dealers and their customers and to perform their task in an efficient manner. The handling of this application is very simple since the interface is designed in such a way that the end-user doesn't require to possess any knowledge in computers and hence the users can easily understand and achieve effective interaction with the system with very minimal effort.
+
+
+
+
+
+OPERATIONAL CHARACTERISTICS:
+
+Correctness: The software fulfills all the requirements that are required by the automobile dealer by including all the necessary subsystem likes sales, service which cover all aspects of the dealership.
+
+Usability: The software interface is designed in an intuitive and user-friendly manner so that end-users require minimal time and effort to achieve maximum interaction with the system.
+
+Integrity: This system is designed to ensure that the integrity of the data from the dealership is maintained and any security threats to the system are anticipated and addressed during the design and development of the software.
+
+Reliability: The software will not have any defects or bugs and the product will be made sure that the probability of failure while execution causing trouble to the user will be negligible. This system will be reliable and the time period of failure-free operation of the product will be maximum as possible.
+
+Efficiency: This software will be developed in such a way that it makes sure to use all the available resources for computation and makes effective use of storage space thus ensuring maximum utilization of system resources to provide services to the users.
+
+Security: This dealership management system can be accessed only by authorized users can only allow its usage to authenticated users since the dealers and the users need to use provide the login credentials and passwords in order to access the system.
+
+Safety: This software is not hazardous to the environment.
+
+
+
+
+
+
+CONTROL, SUPPORT AND MAINTENANCE:
+The application will be developed in a maintainable manner so that it will be easy to incorporate new requirements in the individual systems. Being a modular system modification of the software to correct faults, bugs or to improve the product for performance enhancements, improving the design to make it more user-friendly, adding additional features for more user satisfaction. This maintenance will be provided to ensure that the application continues to satisfy the user requirements and sustain the software throughout its operational lifecycle.
+
+ASSUMPTIONS AND DEPENDENCIES:
+	End-users have minimum knowledge of computers in terms of giving inputs and understanding the results from the applications.
+	Infrastructure provided at the dealership which satisfy the minimum requirement for running the application like hardware , network availability, etc.
+	Dealer should be capable of handling the management system to modify the data that is required by the dealer in the application.
+	Vehicle after servicing will be notified to the dealer who then notifies the respective customer.
+	Spares after purchasing won't be returned back by the customer.
+
+
+
+
+
+SYSTEM ARCHITECTURE AND CONSTRUCTION:
+This auto dealership management system will be developed using the latest technologies available like HTML5,JavaScript ES6, MongoDB with the intention of incorporating innovative features and enhancing the existing ones to increase the overall efficiency of the system. These helps make the application more user-friendly and makes it more productive. HTML5 provides the basic structure for the website, JavaScript brings the behavior to the website by adding features to conveniently search for vehicles and display the list of vehicles, MongoDB stores the complete records of dealer, customers, vehicles, inventory, etc. These technologies allow faster search, interaction and deal closure which is profitable to both the dealer and the customer.
+
+
+
+
+
+SPECIFIC REQUIREMENTS
+GENERAL REQUIREMENTS:
+The requirements specification of the software provides a detailed overview of the software system and its parameters. It basically defines how the users perceive the project and its functionality. This describes the project end-user and its user interface, hardware and software requirements.
+
+
+
+
+USER FACILITIES:
+	Dealers and their customers will be provided with a login and a password when they register for the software application in order to authenticate the user and log them into application. 
+	Dealers can post the vehicles that need to be sold by the dealership in the vehicle sales
+	Customers of the dealership can browse through the vehicles to the find the vehicle of their choice and can book the required vehicle by initiating a purchase and completing the transaction.
+	Customers can give their vehicles for servicing in the dealership and this process can be tracked from the application and it can inform the pickup to the customer after the servicing is finished.
+	Customers can buy spare parts from the application's spare parts inventory and buy the required parts by completing the transaction.
+
+
+
+
+SOFTWARE REQUIREMENTS:
+FRONTEND RESOURCES:
+	HTML 5
+It is a standard markup language that is used for creating the website and provides the base structure and layout for a web page that is displayed in a browser.
+	CSS 3
+It is a stylesheet language used to describe how the html elements should be displayed on the screen.
+	JavaScript ES6
+It is a high-level interpreted scripting language that gives behavior to the website to give a dynamic and interactive experience for the user by manipulating the html elements of the webpage.
+	jQuery v3.4.1
+It is an opensource fast and concise JavaScript library designed to simplify html element manipulation and event handling.
+	Chrome browser
+A browser is a software application that can interpret and display HTML Web pages, applications, JavaScript and other content.
+
+BACKEND RESOURCES:
+	Node.js 10.16.3LTS
+It is an opensource JavaScript runtime server environment that can execute JavaScript code to generate dynamic page content by modifying files on the server and can collect user data from the website , transmit it to the server and also can modify data in the database.
+	Express.js v4.17.1
+Express.js is an essential web framework of Node.js. Express is a layer built on the top of the Node.js that helps manage a server and routes that provides robust features to develop web applications.
+
+DATABASE RESOURCES:
+	MongoDB v4.2.0
+MongoDB is a cross-platform document-oriented , dynamic and scalable database program. It is a NoSQL database program that uses JSON-like documents with schema. Unlike SQL it stores data in the form of JSON instead of 2-dimensional row-column table.
+	Mongoose v5.7.5
+It is an object data modelling library for MongoDB and Node.js. Since Node.js can only access MongoDB through its native MongoDB driver Mongoose is used to translate between objects in code and the representation of those objects in MongoDB. It basically simplifies writing the MongoDB validation and boilerplate code.
+
+HARDWARE REQUIREMENTS:
+	PROCESSOR: At least Intel Core 2 Duo processor and above or
+                        At least Athlon 64 FX-60 processor and above.
+	RAM: At least 2 GB of RAM
+	HARD DISK SPACE: At least 20GB of disk space
+
+COMMUNICATIONS REQUIREMENTS:
+	The application require connections to the system server over the HTTPS 2 connection over TLS/SSL and the application is supported across all types of web browsers that are capable of executing JavaScript ES6.
+	The database will be also compatible since the database communicates with the server through a regular TCP/IP socket.
+	These protocols allows secure and yet efficient transmission of data over the network from the server to the front-end and server to the database.
+
+
+
+
+SYSTEM INTERFACES:
+In this there are two interfaces , one is the interface between front-end and the NodeJS Server. Another interface is between the NodeJS Server and the Mongo Database. When the user provides input in the front-end it is sent to the NodeJS Server which does any processing if required and queries the MongoDB for any results. If any relevant data to the query is found, the data is returned to the NodeJS Server and then the required results are displayed on the front-end interface.
+
+
+CAPABILITY REQUIREMENTS:
+The system should be capable of running V8 engine which is a high performance JavaScript Web assembly engine that executes the JavaScript ECMA script code in order to host the server locally and run the web application. It is the capability requirement since it is the system attribute that is required to allow the execution of JavaScript code.
+
+SYSTEM MANAGEMENT FUNCTIONS:
+	Dealers are authorized to modify the vehicles or the details of those that are currency sold by the dealership on the application.
+	Dealers have permission to notify the customers regarding the status of the vehicle that is being serviced under the dealership
+	Dealers are authorized to edit the inventory of the spare parts as per the dealership requirement and also can edit the details of the specific spares as per the dealers.
+	Dealers have privileges to modify the customer access to the application.
+
+OTHER PRODUCTS:
+Additional improvements can be done to the applications by adding new features like better analysis of dealership profitability through retail sales, service and parts analysis. The data from the database can be integrated with a cloud environment so that data can be backed up in the cloud reducing risk of loss of data. The features may include E-mail, SMS alerts, reports, sales, purchase details, transaction, leads and vehicle and parts ordering through E-mail which could increase the efficiency of the application and increase the profitability of the dealership.
+
+CONSTRAINT REQUIREMENT:
+	Software must be developed in finite amount of time.
+	Must be developed in a limited budget.
+	Maximum utilization of hardware for optimal performance of software.
