@@ -1,0 +1,166 @@
+MODULE BREAKDOWN STRUCTURE
+
+AIM:
+Design architecture for the project and split up the module based on the functionality. 
+TITLE OF PROJECT:
+Automobile Dealership Management System
+
+ARCHITECTURAL DESIGN FOR THE PROJECT:
+
+ 
+
+ARCHITECTURE DESCRIPTION :
+The aim of the software modularization process is to partition a software system into subsystems to provide an abstract view of the architecture of the software system. In this system, the dealer or the customer first needs to authenticate themselves to start using the application. Here dealer can log in with their given ID and password in order to manage the website. The dealer can post the vehicles that needs to be sold by the dealership in vehicle sales. The customers of the dealership can register and log into the website. Here the customers can browse through various vehicles listed on the website which enables the customer to find the vehicle as per his/her requirements. Customers can search vehicles in the sales and can then view the complete specification of each vehicle listing with its features, price, etc. according to their requirements and can book the vehicle by initiating a purchase. Then the customer needs to pay the dealership the price of the property that the customer wants to purchase. After the successful completion of the transaction process, the vehicle will be booked under that customer. The customer can service their vehicle in the dealership and the system tracks this information and informs the customer of pickup. Also, customers can buy spare parts from the dealership with the help of spare part inventory and similarly buy the required components by the customer and can check out.
+
+LIST OF MODULES IDENTIFIED:
+1. Vehicle Sales
+2. Vehicle Service
+3. Spares Inventory
+
+
+
+MODULE DESCRIPTION:
+This software consists of modules with different tasks and outputs. Automobile Dealership Management system consists of different modules like vehicle sales, vehicle service, and spares inventory.
+VEHICLE SALES:
+Vehicle sales includes managing the vehicle details which contains the model of the vehicle, price etc. that are currently available, and the vehicles and vehicle Booking includes the details of customer who bought that vehicle and the model of the vehicle that got booked by the customer. Customers can search vehicles in the sales and can then view the complete specification of each vehicle listing with its features, price, etc. according to their requirements and can book the vehicle by initiating a purchase. Payment and Transactions includes the payment option, cost of the product, name of the bank and user id.
+
+VEHICLE SERVICE:
+Vehicle service consists of the no. of the vehicles that are currently being serviced and the vehicles that got serviced and delivered to the customer recently and it consists of the status of vehicles that are currently being served and gets notified to the customer when it completes.
+
+SPARES INVENTORY:
+Spares Inventory includes the details of spares available in the inventory and purchase history of spares and it also includes the payment details of the purchase of spare parts. Here customers can buy spare parts from the dealership with the help of spare part inventory and similarly buy the required components by the customer and can check out.
+
+MODULE SPECIFICATIONS
+
+SOFTWARE:
+
+FRONTEND RESOURCES: 
+➢ HTML 5 
+It is a standard markup language that is used for creating the website and provides the base structure and layout for a web page that is displayed in a browser. 
+➢ CSS 3 
+It is a stylesheet language used to describe how the html elements should be displayed on the screen. 
+➢ JavaScript ES6 
+It is a high-level interpreted scripting language that gives behavior to the website to give a dynamic and interactive experience for the user by manipulating the html elements of the webpage. 
+➢ jQuery v3.4.1 I
+it is an opensource fast and concise JavaScript library designed to simplify html element manipulation and event handling. 
+➢ Chrome browser 
+A browser is a software application that can interpret and display HTML Web pages, applications, JavaScript and other content. BACKEND RESOURCES: 
+
+
+
+
+BACKEND RESOURCES:
+➢ Node.js 10.16.3LTS 
+It is an opensource JavaScript runtime server environment that can execute JavaScript code to generate dynamic page content by modifying files on the server and can collect user data from the website, transmit it to the server and also can modify data in the database. 
+
+➢ Express.js v4.17.1 
+Express.js is an essential web framework of Node.js. Express is a layer built on the top of the Node.js that helps manage a server and routes that provides robust features to develop web applications.
+
+DATABASE RESOURCES:
+➢ MongoDB v4.2.0 
+MongoDB is a cross-platform document-oriented, dynamic and scalable database program. It is a NoSQL database program that uses JSON-like documents with schema. Unlike SQL it stores data in the form of JSON instead of 2-dimensional row-column table. 
+➢ Mongoose v5.7.5 
+It is an object data modelling library for MongoDB and Node.js. Since Node.js can only access MongoDB through its native MongoDB driver Mongoose is used to translate between objects in code and the representation of those objects in MongoDB. It basically simplifies writing the MongoDB validation and boilerplate code
+
+
+HARDWARE:
+➢ PROCESSOR: 
+At least Intel Core 2 Duo processor and above or At least Athlon 64 FX-60 processor and above. 
+➢ RAM: 
+At least 2 GB of RAM 
+➢ HARD DISK SPACE: 
+At least 20GB of disk space
+
+
+
+SKILL SET:
+•	Knowledge of Web Development
+•	Frontend Development using HTML and CSS
+•	Backend Development using JavaScript
+•	State Management of data
+•	Basic understanding of importing and exporting modules
+•	Knowledge in MongoDB Queries.
+•	Hosting Server using Express
+•	Managing Send and Get requests i.e. Routing in NodeJS
+
+
+HUMAN FACTORS:
+•	Skill and Knowledge of team
+•	Team should have common focus
+•	Collaboration among the team
+•	Problem Solving skills of each member of the team.
+•	Each team member being organised and planned
+•	Programming expertise of each team member
+
+TIME CHART FOR COMPLETION OF MODULES
+
+ACTIVITY
+NUMBER	ACTIVITY
+  NAME	ON
+CRITICAL PATH	ACTIVITY
+   TIME
+ (DAYS)	EARLIEST
+START	EARLIEST
+FINISH	LATEST
+START	LATEST
+FINISH	SLACK
+LS-ES
+     1	Work break down structure	Yes	2	0	3	0	3	0
+     2	Defining requirements	No	1	2	5	6	9	4
+     3	Planning
+Project	Yes	2	9	11	15	13	6
+     4	Vehicle sales
+design	No	2	13	15	17	13	4
+     5	Vehicle service
+design	No	2	10	12	15	17	5
+     6	Spares Inventory
+design	No	2	5	7	18	20	13
+     7	Frontend
+Development	Yes	10	21	24	23	26	2
+     8	Backend
+development	Yes	12	30	32	31	33	1
+     9  	Testing	No	2	34	35	34	35	0
+
+Project Completion Time = 35 Days
+
+Number of Critical Path = 4
+
+
+
+
+
+COST ESTIMATION FOR THE PROJECT WITH RESPECT TO INDIVIDUAL MODULE
+
+
+ACTIVITY
+NUMBER	ACTIVITY
+NAME	IMMEDIATE
+PREDECESSOR	NORMAL
+DAYS	NORMAL COST	CRASH
+TIME	CRASH
+COST
+1	Work break down structure	None	2	$50	1	$50
+2	Defining requirements	1	1	$150	1	$200
+3	Planning
+Project	1,2	2	$200	1	$250
+4	Vehicle sales
+design	3	2	$200	2	$250
+5	Vehicle service
+design	3	2	$100	1	$300
+6	Spares Inventory
+design	3	2	$200	2	$300
+7	Frontend
+Development	4,5,6	10	$500	7	$800
+8	Backend
+development	4,5,6,7	12	$800	6	$1000
+9	Testing	7,8	2	$500	2	$800
+a.) Total Project cost under Normal Time = $2700
+a.) Crash the Project completion time = 23 days
+c.) Total Project cost under Crash Time = $3550
+d.) Calculation of Total Project after crashing = $3550
+
+
+
+
+WORK BREAKDOWN STRUCTURE:
+To develop a software like Automobile Dealership Management system planning is very important. Work Break Down structure plays an important role in developing a software. It means breaking the project scope and deliverables into smaller, more manageable components like work packages. By WBS one can estimate the time, costs and resources. Planning project schedule gives a vision to the developer that what he is going to do in the next few months. Project schedule consists of writing down the tasks by keeping the project scope in mind and establish the order of tasks like first creating the login and registration pages then the user facilities and then dealer facilities and creating milestones are also important like after developing all the user facilities we can mark it as a milestone and it makes sure that the project is in the right way to the target to complete all the work on time. To do all the work necessary to complete the project, entire project is decomposed to having a work breakdown structure that includes  Planning, Designing, Coding and Development, Testing of software. This breakdown ensures that these components will be manageable to achieve the milestones in order to complete the entire software.
