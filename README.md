@@ -25,5 +25,18 @@ Vehicle service consists of the no. of the vehicles that are currently being ser
 Spares Inventory includes the details of spares available in the inventory and purchase history of spares and it also includes the payment details of the purchase of spare parts. Here customers can buy spare parts from the dealership with the help of spare part inventory and similarly buy the required components by the customer and can check out.
 
 ## WEB APP
+LOGIN
 
-<img src='Auto_media/readme/app.gif' width=70% height=70%/>
+<img src='Auto_media/readme/login.png' width=90% height=90%/>
+
+AUTORIZZ
+
+<img src='Auto_media/readme/app.gif' width=90% height=90%/>
+
+AUTO SHOP
+
+<img src='Auto_media/readme/shop.png' width=90% height=90%/>
+
+AUTO GARAGE
+
+<img src='Auto_media/readme/service.png' width=90% height=90%/>
