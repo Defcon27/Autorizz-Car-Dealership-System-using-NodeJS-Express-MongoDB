@@ -37,6 +37,10 @@ AUTO SHOP
 
 <img src='Auto_media/readme/shop.png' width=90% height=90%/>
 
+BOOKING
+
+<img src='Auto_media/readme/book.png' width=90% height=90%/>
+
 AUTO GARAGE
 
 <img src='Auto_media/readme/service.png' width=90% height=90%/>
