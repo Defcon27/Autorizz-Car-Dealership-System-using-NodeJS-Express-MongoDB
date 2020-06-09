@@ -47,3 +47,7 @@ BOOKING
 AUTO GARAGE
 
 <img src='Auto_media/readme/service.png' width=90% height=90%/>
+
+
+#### USE CASE DIAGRAM
+<img src='Docs/use%20case.png' width=60% height=60%/>
