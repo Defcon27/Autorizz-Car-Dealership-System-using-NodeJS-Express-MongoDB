@@ -51,3 +51,12 @@ AUTO GARAGE
 
 #### USE CASE DIAGRAM
 <img src='Docs/use%20case.png' width=60% height=60%/>
+
+
+### Instruction to setup
+- Clone the Repo
+- Install dependencies using `npm install` 
+- MongoDB server should be running with appropriate data
+- Move into AutoGarage source folder
+- Run   `npm start`
+- Launch app in browser `localhost:5000`
