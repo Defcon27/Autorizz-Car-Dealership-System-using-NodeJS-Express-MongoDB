@@ -60,3 +60,6 @@ AUTO GARAGE
 - Move into AutoGarage source folder
 - Run   `npm start`
 - Launch app in browser `localhost:5000`
+
+### Report 
+[Full Report Here](Docs/SW%20REPORT.pdf.pdf)
