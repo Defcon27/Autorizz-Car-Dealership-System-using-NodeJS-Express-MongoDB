@@ -1,0 +1,363 @@
+<!-- Filtering Options -->
+<section id="filtering">
+
+    <div class="container-fluid">
+
+
+        <div class="row">
+
+            {{!-- Pricing --}}
+            <div class="col-sm">
+                <div class="dropdown price">
+                    <button class="btn btn-outline-dark dropdown-toggle bord-wid" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown"> Price </button>
+
+                    <form class="dropdown-menu">
+                        <div class="form-check ml-3 my-1">
+                            <input type="radio" class="form-check-input gas" id="under50" name="materialExampleRadios">
+                            <label class="form-check-label card-link-secondary"> Under $50K</label>
+                        </div>
+
+                        <div class="form-check ml-3 my-1">
+                            <input type="radio" class="form-check-input gas" id="under75" name="materialExampleRadios">
+                            <label class="form-check-label card-link-secondary"> Under $75K</label>
+                        </div>
+
+                        <div class="form-check ml-3 my-1">
+                            <input type="radio" class="form-check-input gas" id="under100" name="materialExampleRadios">
+                            <label class="form-check-label card-link-secondary"> Under $100K</label>
+                        </div>
+
+                        <div class="form-check ml-3 my-1">
+                            <input type="radio" class="form-check-input gas" id="under150" name="materialExampleRadios">
+                            <label class="form-check-label card-link-secondary"> Under $150K</label>
+                        </div>
+
+                        <div class="form-group mx-2 mt-2 mb-0">
+                            <label class="mb-0" for="formControlRange">Price</label>
+                            <input type="range" class="form-control-range" max="200" id="formControlRangePriceGas"
+                                onInput="$('#rangeval').html($(this).val()+'K')">
+                            <span id="rangeval">100K</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+            {{!-- Year --}}
+            <div class="col-sm">
+                <div class="dropdown yearby">
+                    <button class="btn btn-outline-dark dropdown-toggle bord-wid" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown"> Year </button>
+
+                    <div class="dropdown-menu">
+                        <div class="custom-control custom-checkbox ml-3 my-1">
+                            <input type="checkbox" class="custom-control-input gas" id="year2021">
+                            <label class="custom-control-label" for="year2021">2021</label>
+                        </div>
+
+                        <div class="custom-control custom-checkbox ml-3 my-1">
+                            <input type="checkbox" class="custom-control-input gas" id="year2020">
+                            <label class="custom-control-label" for="year2020">2020</label>
+                        </div>
+
+                        <div class="custom-control custom-checkbox ml-3 my-1">
+                            <input type="checkbox" class="custom-control-input gas" id="year2019">
+                            <label class="custom-control-label" for="year2019">2019</label>
+                        </div>
+
+                        <div class="custom-control custom-checkbox ml-3 my-1">
+                            <input type="checkbox" class="custom-control-input gas" id="year2018">
+                            <label class="custom-control-label" for="year2018">2018</label>
+                        </div>
+
+                        <div class="form-group mx-2 mt-2 mb-0">
+                            <label class="mb-1" for="formControlRange">Year</label>
+                            <input type="range" class="form-control-range" min="2015" max="2021"
+                                id="formControlRangeYearGas" onInput="$('#rangevalyear').html($(this).val())">
+                            <span id="rangevalyear">2018</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            {{!-- Mileage --}}
+            <div class="col-sm">
+                <div class="dropdown Range">
+                    <button class="btn btn-outline-dark dropdown-toggle bord-wid" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown"> Mileage </button>
+                    <div class="dropdown-menu">
+                        <div class="form-group mx-2 my-2">
+                            <label for="formControlRange"> Mileage </label>
+                            <input type="range" class="form-control-range" min="10" max="50" id="formControlRangeGas"
+                                onInput="$('#rangevalrange').html($(this).val()+'Mi')">
+                            <span id="rangevalrange">25 Mi</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- More -->
+            <div class="col-sm">
+                <div class="dropdown">
+                    <button class="btn btn-outline-dark dropdown-toggle bord-wid" type="button"
+                        id="dropdownMenuButtonGas" data-toggle="dropdown"> More </button>
+                    <ul class="dropdown-menu px-1">
+
+                        <div class="transmission">
+                            Transmission<br>
+                            <a href="/gas/filter/?trans=Automatic"><button type="button"
+                                    class="btn btn-dark btn-sm">Automatic</button></a>
+                            <a href="/gas/filter/?trans=Manual"><button type="button"
+                                    class="btn btn-dark btn-sm">Manual</button></a>
+                        </div><br>
+
+                        <div class="Drivetrain">
+                            Drivetrain<br>
+                            <a href="/gas/filter/?drive=FWD"><button type="button"
+                                    class="btn btn-dark btn-sm">FWD</button></a>
+                            <a href="/gas/filter/?drive=RWD"><button type="button"
+                                    class="btn btn-dark btn-sm">RWD</button></a>
+                            <a href="/gas/filter/?drive=AWD"><button type="button"
+                                    class="btn btn-dark btn-sm">AWD</button></a>
+
+                        </div><br>
+
+                        <div class="Cyl">
+                            Cylinders<br>
+                            <a href="/gas/filter/?cyl=4"><button type="button"
+                                    class="btn btn-dark btn-sm">4</button></a>
+                            <a href="/gas/filter/?cyl=6"><button type="button"
+                                    class="btn btn-dark btn-sm">6</button></a>
+                            <a href="/gas/filter/?cyl=8"><button type="button"
+                                    class="btn btn-dark btn-sm">8</button></a>
+
+                        </div><br>
+
+                    </ul>
+                </div>
+            </div>
+
+
+            <!-- Sorting -->
+            <div class="col-sm">
+                <div class="dropdown sortby">
+                    <button class="btn btn-outline-dark dropdown-toggle bord-wid" type="button"
+                        id="dropdownMenuButtonGas" data-toggle="dropdown"> Sort By </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/gas/filter/?sortBy=latest">Latest Year</a>
+                        </li>
+                        <li><a class="dropdown-item" href="/gas/filter/?sortBy=highprice">Highest Price</a></li>
+                        <li><a class="dropdown-item" href="/gas/filter/?sortBy=lowprice">Lowest Price</a></li>
+                        <li><a class="dropdown-item" href="/gas/filter/?sortBy=highperf">Highest Performance</a>
+                        </li>
+                        <li><a class="dropdown-item" href="/gas/filter/?sortBy=lowperf">Lowest Performance</a></li>
+                        <li><a class="dropdown-item" href="/gas/filter/?sortBy=highrange">Highest Mileage</a></li>
+                        <li><a class="dropdown-item" href="/gas/filter/?sortBy=lowrange">Lowest Mileage</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+<!-- Car Models -->
+<section id="carmodels">
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            {{#each models}}
+
+
+            <div class="col-lg-5 car-item">
+
+                <div class="modeltitle">
+                    <h4>{{this.title}}</h4>
+                </div>
+
+                <img style="padding:2% 10%;" src=/{{this.imagePath}} alt="Model Pic">
+
+                <div class="model-info">
+
+                    <div class="info-first">
+                        <div class="info-first-cards">
+                            <p class="first-specs">Top Speed</p>
+                            <svg style="width:24px;height:24px">
+                                <path fill="currentColor"
+                                    d="M12,16A3,3 0 0,1 9,13C9,11.88 9.61,10.9 10.5,10.39L20.21,4.77L14.68,14.35C14.18,15.33 13.17,16 12,16M12,3C13.81,3 15.5,3.5 16.97,4.32L14.87,5.53C14,5.19 13,5 12,5A8,8 0 0,0 4,13C4,15.21 4.89,17.21 6.34,18.65H6.35C6.74,19.04 6.74,19.67 6.35,20.06C5.96,20.45 5.32,20.45 4.93,20.07V20.07C3.12,18.26 2,15.76 2,13A10,10 0 0,1 12,3M22,13C22,15.76 20.88,18.26 19.07,20.07V20.07C18.68,20.45 18.05,20.45 17.66,20.06C17.27,19.67 17.27,19.04 17.66,18.65V18.65C19.11,17.2 20,15.21 20,13C20,12 19.81,11 19.46,10.1L20.67,8C21.5,9.5 22,11.18 22,13Z" />
+                            </svg><b>{{this.topspeed}} </b>mph
+                        </div>
+                        <div class="info-first-cards">
+                            <p class="first-specs">0-60mph</p>
+                            <svg style="width:24px;height:24px">
+                                <path fill="currentColor"
+                                    d="M19.03 7.39L20.45 5.97C20 5.46 19.55 5 19.04 4.56L17.62 6C16.07 4.74 14.12 4 12 4C7.03 4 3 8.03 3 13S7.03 22 12 22C17 22 21 17.97 21 13C21 10.88 20.26 8.93 19.03 7.39M13 14H11V7H13V14M15 1H9V3H15V1Z" />
+                            </svg><b>{{this.time60}} </b>s
+                        </div>
+                        <div class="info-first-cards">
+                            <p class="first-specs">Mileage</p>
+                            <svg style="width:24px;height:24px">
+                                <path fill="currentColor"
+                                    d="M18,10A1,1 0 0,1 17,9A1,1 0 0,1 18,8A1,1 0 0,1 19,9A1,1 0 0,1 18,10M12,10H6V5H12M19.77,7.23L19.78,7.22L16.06,3.5L15,4.56L17.11,6.67C16.17,7 15.5,7.93 15.5,9A2.5,2.5 0 0,0 18,11.5C18.36,11.5 18.69,11.42 19,11.29V18.5A1,1 0 0,1 18,19.5A1,1 0 0,1 17,18.5V14C17,12.89 16.1,12 15,12H14V5C14,3.89 13.1,3 12,3H6C4.89,3 4,3.89 4,5V21H14V13.5H15.5V18.5A2.5,2.5 0 0,0 18,21A2.5,2.5 0 0,0 20.5,18.5V9C20.5,8.31 20.22,7.68 19.77,7.23Z" />
+                            </svg><b>{{this.mileage}} </b>mpg
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <div class="info-second">
+
+                    <div class="row info-second-row-gas">
+
+                        <div class="col-sm info-second-col-gas">
+                            <ul>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24"
+                                        viewBox="0 0 226 226" style=" fill:#000000;">
+                                        <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                            stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                            stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                                            font-weight="none" font-size="none" text-anchor="none"
+                                            style="mix-blend-mode: normal">
+                                            <path d="M0,226v-226h226v226z" fill="none"></path>
+                                            <g fill="currentColor">
+                                                <path
+                                                    d="M103.58333,28.25v28.25h28.25v9.41667h-37.66667l-28.25,28.25h-28.25v18.83333h-9.41667v-18.83333h-28.25v75.33333h28.25v-18.83333h9.41667v18.83333h28.25l28.25,28.25h56.5l37.66667,-37.66667v-9.41667h9.41667v18.83333h28.25v-75.33333h-28.25v18.83333h-9.41667v-47.08333h-37.66667v-9.41667h28.25v-28.25zM141.25,94.16667l-8.53385,28.25h17.95052l-37.66667,37.66667l7.65104,-27.36719h-17.06771z">
+                                                </path>
+                                            </g>
+                                        </g>
+                                    </svg> {{this.engine}}L Turbo Engine
+                                </li>
+
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="25" height="25" x="0"
+                                        y="0" viewBox="0 0 29.643 29.643" style="enable-background:new 0 0 512 512"
+                                        xml:space="preserve" class="">
+                                        <g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M18.621,12.397l-0.546-1.295c0,0,1.267-2.859,1.157-2.969l-1.678-1.639c-0.117-0.113-2.978,1.191-2.978,1.191l-1.32-0.533   c0,0-1.169-2.898-1.327-2.898h-2.37c-0.164,0-1.242,2.906-1.242,2.906L6.998,7.695c0,0-2.922-1.242-3.034-1.135L2.287,8.203   c-0.116,0.115,1.219,2.916,1.219,2.916l-0.544,1.295c0,0-2.962,1.139-2.962,1.295v2.322c0,0.16,2.969,1.217,2.969,1.217   l0.545,1.291c0,0-1.268,2.861-1.157,2.971l1.679,1.641c0.113,0.111,2.976-1.195,2.976-1.195l1.321,0.537   c0,0,1.166,2.896,1.326,2.896h2.37c0.163,0,1.244-2.906,1.244-2.906l1.32-0.535c0,0,2.918,1.242,3.031,1.135l1.678-1.643   c0.115-0.111-1.221-2.914-1.221-2.914l0.546-1.295c0,0,2.963-1.143,2.963-1.299v-2.32C21.591,13.453,18.621,12.397,18.621,12.397z    M10.795,18.207c-1.905,0-3.459-1.52-3.459-3.387c0-1.865,1.554-3.385,3.459-3.385c1.908,0,3.459,1.52,3.459,3.385   C14.254,16.688,12.703,18.207,10.795,18.207z"
+                                                    fill="currentColor" data-original="#000000" />
+                                                <path
+                                                    d="M28.538,9.693l0.014-0.676c0,0,1.118-1.006,1.091-1.076l-0.414-1.048c-0.031-0.072-1.544-0.062-1.544-0.062l-0.474-0.492   c0,0,0.058-1.502-0.013-1.533l-1.041-0.467c-0.074-0.033-1.117,1.035-1.117,1.035l-0.684-0.027c0,0-1.039-1.119-1.109-1.092   l-1.061,0.393c-0.071,0.025-0.036,1.518-0.036,1.518l-0.495,0.463c0,0-1.523-0.082-1.554-0.014l-0.457,1.02   c-0.032,0.072,1.065,1.119,1.065,1.119l-0.014,0.672c0,0-1.117,1.008-1.09,1.078l0.415,1.049c0.03,0.07,1.543,0.059,1.543,0.059   l0.473,0.494c0,0-0.055,1.502,0.016,1.533l1.041,0.465c0.072,0.033,1.116-1.029,1.116-1.029l0.685,0.023   c0,0,1.037,1.119,1.109,1.094l1.058-0.393c0.073-0.025,0.038-1.52,0.038-1.52l0.494-0.459c0,0,1.523,0.078,1.555,0.01l0.457-1.02   C29.634,10.74,28.538,9.693,28.538,9.693z M26.145,9.9c-0.367,0.82-1.347,1.184-2.187,0.809c-0.836-0.373-1.22-1.346-0.853-2.168   c0.365-0.818,1.348-1.18,2.184-0.807C26.126,8.111,26.51,9.082,26.145,9.9z"
+                                                    fill="currentColor" data-original="#000000" />
+                                            </g>
+                                        </g>
+                                    </svg> {{this.gearbox}} Transmission
+
+                                </li>
+
+                                <li>
+                                    <svg height="24" viewBox="0 0 192 192" width="24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g id="_20-transmission" data-name="20-transmission" fill="currentColor">
+                                            <path
+                                                d="m96 0c-50.99 0-88 33.645-88 80 0 23.774 9.309 51.134 24.9 73.187 17.7 25.029 40.1 38.813 63.1 38.813s45.405-13.784 63.1-38.813c15.591-22.053 24.9-49.413 24.9-73.187 0-46.355-37.01-80-88-80zm50.036 143.95c-14.4 20.368-32.636 32.05-50.036 32.05s-35.636-11.682-50.036-32.05c-13.548-19.163-21.964-43.667-21.964-63.95 0-37.683 29.607-64 72-64s72 26.317 72 64c0 20.283-8.416 44.787-21.964 63.95z" />
+                                            <path
+                                                d="m136 64v24h-16v-24h-16v24h-16v-24h-16v24h-16v-24h-16v32a8 8 0 0 0 8 8h24v24h16v-24h16v24h16v-24h16v24h16v-64z" />
+                                        </g>
+                                    </svg> {{this.transmission}}
+                                </li>
+
+                            </ul>
+                        </div>
+
+
+                        <div class="col-sm info-second-col-gas">
+
+                            <ul>
+                                <li>
+                                    <svg style=" width:26px;height:26px" viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M10,4H12V6H10V4M7,3H9V5H7V3M7,6H9V8H7V6M6,8V10H4V8H6M6,5V7H4V5H6M6,2V4H4V2H6M13,22A2,2 0 0,1 11,20V10A2,2 0 0,1 13,8V7H14V4H17V7H18V8A2,2 0 0,1 20,10V20A2,2 0 0,1 18,22H13M13,10V20H18V10H13Z" />
+                                    </svg> {{this.colour}}
+                                </li>
+                                <li>
+                                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M7 18C7 18 4 10 4 6S6 2 6 2H7C7 2 8 2 8 3S7 4 7 6 10 10 10 13 7 18 7 18M12 17C11 17 8 19.5 8 19.5C7.7 19.7 7.8 20 8 20.3C8 20.3 9 22.1 11 22.1H17C18.1 22.1 19 21.2 19 20.1V19.1C19 18 18.1 17.1 17 17.1H12Z" />
+                                    </svg> {{this.interior}}
+                                </li>
+
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24"
+                                        viewBox="0 0 226 226" style=" fill:#000000;">
+                                        <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                            stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                            stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                                            font-weight="none" font-size="none" text-anchor="none"
+                                            style="mix-blend-mode: normal">
+                                            <path d="M0,226v-226h226v226z" fill="none"></path>
+                                            <g fill="#5c5e62">
+                                                <path
+                                                    d="M113,1.62981c-61.49129,0 -111.37019,49.8789 -111.37019,111.37019c0,61.49129 49.8789,111.37019 111.37019,111.37019c61.49129,0 111.37019,-49.8789 111.37019,-111.37019c0,-61.49129 -49.8789,-111.37019 -111.37019,-111.37019zM113,25.53365c48.21514,0 87.46635,39.2512 87.46635,87.46635c0,48.21514 -39.2512,87.46635 -87.46635,87.46635c-48.21514,0 -87.46635,-39.2512 -87.46635,-87.46635c0,-48.21514 39.2512,-87.46635 87.46635,-87.46635zM113,35.58413c-42.78245,0 -77.41587,34.63341 -77.41587,77.41587c0,42.78245 34.63341,77.41587 77.41587,77.41587c42.78245,0 77.41587,-34.63341 77.41587,-77.41587c0,-42.78245 -34.63341,-77.41587 -77.41587,-77.41587zM105.39423,52.15385c0,0.06791 0,0.20373 0,0.27163l-1.90144,33.68269c-3.39543,1.1884 -6.55318,2.88612 -9.23558,5.16106l-30.15144,-14.9399c9.74489,-13.00451 24.34525,-22.07031 41.28846,-24.17548zM120.8774,52.15385c16.60366,2.13912 31.03426,10.96725 40.74519,23.63221l-30.15144,15.21154c-2.54658,-2.13912 -5.5006,-3.73497 -8.69231,-4.88942l-1.90144,-33.68269c0,-0.0679 0,-0.20372 0,-0.27163zM169.22837,89.09615c0.03395,-0.03395 0.23768,0.03395 0.27163,0c3.1238,7.33413 4.88942,15.44922 4.88942,23.90385c0,8.45463 -1.76562,16.56971 -4.88942,23.90385c-0.03395,-0.03395 -0.23768,0.03395 -0.27163,0l-27.97837,-18.47115c0.30559,-1.73167 0.54327,-3.59915 0.54327,-5.43269c0,-1.83353 -0.20372,-3.70102 -0.54327,-5.43269zM56.22837,89.63942c0.03395,0.03395 0.23768,-0.03395 0.27163,0l28.25,18.19952c-0.27163,1.62981 -0.54327,3.42938 -0.54327,5.16106c0,1.73167 0.23768,3.53125 0.54327,5.16106l-28.25,18.19952c-0.03395,0.03395 -0.23768,-0.03395 -0.27163,0c-2.95403,-7.19832 -4.61779,-15.10967 -4.61779,-23.36058c0,-8.2509 1.66376,-16.16226 4.61779,-23.36058zM113,99.41827c7.53786,0 13.58173,6.04387 13.58173,13.58173c0,7.53786 -6.04387,13.58173 -13.58173,13.58173c-7.53786,0 -13.58173,-6.04387 -13.58173,-13.58173c0,-7.53786 6.04387,-13.58173 13.58173,-13.58173zM94.25721,134.73077c2.68239,2.30889 5.84014,3.97265 9.23558,5.16106l1.90144,33.68269c0,0.06791 0,0.20373 0,0.27163c-16.94321,-2.10516 -31.54357,-11.17097 -41.28846,-24.17548zM131.47115,135.0024l30.15144,15.21154c-9.71093,12.66496 -24.14153,21.49309 -40.74519,23.63221c0,-0.0679 0,-0.20372 0,-0.27163l1.90144,-33.68269c3.19171,-1.15444 6.14573,-2.7503 8.69231,-4.88942z">
+                                                </path>
+                                            </g>
+                                        </g>
+                                    </svg> {{this.wheel}}
+                                </li>
+
+                            </ul>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="info-third">
+                    <div class="container">
+                        <p>{{this.description}}</p>
+                    </div>
+
+                </div>
+
+
+                <div class="model-buy">
+
+                    <div class="row">
+                        <div class="col-sm buyprice">
+                            <h4>${{this.priceStr}}</h4>
+                        </div>
+                        <div class="col-sm text-center buybutton">
+                            <a style="color: white;" href="booknow/{{this._id}}">
+                                <button id="b1" type="button" class="btn btn-outline-light"> Book Now
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            {{/each}}
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+<script src="/javascripts/gas_cars.js"></script>
