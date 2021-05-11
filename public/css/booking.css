@@ -1,0 +1,194 @@
+body{
+    background-color: white;
+}
+
+
+
+.col-sm{
+    margin: 6% 2.5%;
+    padding: 0 !important;
+}
+
+.heading{
+    margin-bottom: 10%;
+}
+
+.heading h2{
+    color: #464a50;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+
+.heading h3{
+    font-size: 1.5rem;
+    color: #464a50;
+    font-family:'Quicksand', sans-serif;
+}
+
+
+/* Carousal Button */
+.carousal-container{
+    height: 17rem;
+}
+
+@media only screen and (max-width: 540px) {
+    .carousal-container{
+        height: 13rem;
+    }
+}
+
+
+.sidebutton{
+    margin-top: 7.5rem;
+    width: 27px !important;
+    height: 27px;
+    background-color:#464a50 ;
+    border-radius: 8px;
+}
+
+
+
+/* Specs Row */
+.specs-row{
+    margin-top: 5% !important;
+}
+
+
+.specs-box{
+    text-align: center;
+    padding: 0% !important;
+}
+
+.specs-border{
+    border-right: #8d8d8d solid;
+    border-right-width: 1.75px;
+}
+
+
+.spec1{
+    margin: 5% 0 0 !important;
+    color: black;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 100%;
+}
+
+.spec2{
+    color: #141414;
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family:'Quicksand', sans-serif;
+}
+
+.spec3{
+    margin: 0 !important;
+    color: #797b7e;
+    font-size: 1rem;
+    font-family:'Quicksand', sans-serif;
+    font-weight: 600;
+}
+
+
+
+/* Details */
+.modelprice{
+    color: #393c41;
+    font-family:'Quicksand', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: right;
+}
+
+.price-desc{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+/* Place Order  */
+#placeorder{
+    margin-top: 30px;
+    margin-left: 260px;
+    width: 280px;
+    border-color: #307cbe;
+    background-color: #307cbe;
+    color: white;
+    border-width: 2px;
+    border-radius: 25px;
+    font-size: 15px;
+}
+
+
+.placeorder-container{
+    margin-top: 8%;
+    margin-left: 30%;
+    justify-content: center;
+}
+
+.placeorder{
+    width: 100%;
+    border-color: #307cbe !important;
+    background-color: #307cbe !important;
+    color: white !important;
+    border-width: 2px !important;
+    border-radius: 25px !important;
+    font-size: 15px !important;
+
+}
+
+.placeorder:hover{
+    background-color: #262a2e !important;
+    border-color: #262a2e !important;
+}
+
+
+/* Key Features */
+.keyfeatures{
+    margin-top: 9%;
+}
+
+.keyfeatures-heading{
+    margin-bottom: 4%;
+    color: #393c41;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 2.2rem;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+}
+
+.feature{
+    margin: 4% 0;
+    color: #393c41;
+    font-family:'Quicksand', sans-serif;
+    font-size: 1.1rem;
+}
+
+
+/* Description */
+.description{
+    margin-top: 15%;
+}
+
+.desc{
+    margin-top: 8%;
+    text-align: justify;
+}
+
+.desc-heading{
+    color: #3b3d3f;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-weight: 500;
+    font-size: 2.1rem;
+}
+
+.desc-para{
+    color: #626468;
+    font-size: 1.1rem;
+    font-family:'Quicksand', sans-serif;
+    font-weight: 600;
+}
