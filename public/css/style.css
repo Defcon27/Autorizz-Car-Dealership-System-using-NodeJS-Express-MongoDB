@@ -1,0 +1,243 @@
+/* body{
+    background-color: #cccccc !important;
+} */
+
+
+/* Navigation */
+#navigation{
+    background-color: #232425;
+    padding: 0px;
+    font-size: 1.1rem;
+}
+
+#nav-container{
+    padding: 0.7% 5%;
+}
+
+.navbar-brand{
+    font-family: 'Russo One', sans-serif !important;
+    font-size: 1.8rem !important;
+    /* font-weight: bold; */
+}
+
+.nav-catg{
+    padding: 0 1rem;
+    border: #eeeff1 solid;
+    border-width: 1px;
+    border-radius: 2rem;
+}
+
+.nav-catg.active{
+    border-width: 2px;
+}
+
+@media only screen and (max-width: 540px) {
+    .nav-catg{
+        margin-top: 5%;
+        text-align: center;
+    }
+
+    .navbar-brand img{
+        height: 1.6rem !important;
+    }
+}
+
+.nav-catg:hover{
+    background-color: #1d1b1b;
+    
+}
+
+
+
+/* Filters */
+#filtering{
+    background-color: #f2f4f7;
+    padding: 2% 5%;
+    border-bottom: #cacaca solid;
+    border-width: 3px;
+}
+
+#filtering:hover{
+    background-color: #eeeff1;
+}
+
+.bord-wid{
+    border-radius: 6px !important;
+    /* border-width: .13rem !important; */
+    border-color: #343a40 !important;
+}
+
+
+.dropdown-toggle{
+    width: 100%;
+    margin: 1.5%;
+}
+
+
+
+
+
+
+/* Car Models */
+/* h4{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+p{
+    font-family:'Quicksand', sans-serif;
+    font-weight: 600 !important;
+} */
+
+#carmodels{
+    padding: 1.5% 7%;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+
+}
+
+.car-item{
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    border-radius: 15px;
+    border: #cacaca solid;
+    background-color: #fff;
+    border-width: .25rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+
+}
+
+.car-item:hover{
+  border: #777a80 solid;
+  border-width: .25rem;
+  box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+
+
+.modeltitle {
+    font-family: 'Noto Sans JP', sans-serif;
+    margin-top: 12px;
+}
+
+.car-item img{
+    max-height: 100%;
+    max-width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+.info-first{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.first-specs{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+}
+
+.info-first-cards{
+    text-align: center;
+    margin: 0px auto;
+}
+
+.info-first-cards p{
+    margin: 0;
+}
+
+
+
+
+.info-second{
+    font-size: 0.9rem;
+    color: #5c5e62;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.info-second-row{
+    margin-left: 3% !important;
+    margin-right: 0% !important;
+    justify-content: space-around;
+
+}
+
+.info-second-row-gas{
+    margin-top: 5% !important;
+    margin-left: 2% !important;
+    margin-right: 0% !important;
+    justify-content: space-around;
+
+}
+
+.info-second-col{
+    margin-top: 2%;
+    padding: 0 !important;
+}
+
+.info-second-col-gas{
+    margin-top: 0%;
+    padding: 0 !important;
+}
+
+
+.info-second-col-gas li{
+    margin-bottom: 6%;  
+    list-style-type:none;
+}
+
+.info-second-col-gas ul{
+    padding: 0;
+    margin: 0;
+}
+
+
+.info-third{
+    font-family:'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: justify;
+    color: #5c5e62;
+}
+
+
+.model-buy {
+    margin: 24px;
+    margin-left: 15px;
+}
+
+.buyprice{
+    text-align: center;
+}
+
+@media only screen and (max-width: 540px) {
+    .buybutton{
+        margin-top: 5%;
+    }
+}
+
+
+#b1 {
+    height: 40px;
+    width: 130px;
+    border-color: #171a20;
+    background-color: white;
+    color: #171a20;
+    border-radius: 25px;
+    border-width: 2.5px;
+}
+  
+#b1:hover {
+    height: 40px;
+    width: 130px;
+    border-color: #171a20;
+    background-color: #171a20;
+    color: white;
+    border-radius: 25px;
+    border-width: 2.5px;
+}
+
