@@ -1,0 +1,71 @@
+<table>
+    <tr>
+        <td>
+            <h3>Gas Cars</h3>
+        </td>
+        <td style="margin: 10px; padding-left:650px;"></td>
+        <td>
+            <a class="btn btn-dark" href="addgas">Add Gas</a>&nbsp;&nbsp;&nbsp;
+            <a class="btn btn-dark" href="/admin/admin_index">Admin</a>
+        </td>
+    </tr>
+</table>
+
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>T2</th>
+            <th>Year</th>
+            <th>Price</th>
+            <th>Price(Text Form)</th>
+            <th>Top Speed</th>
+            <th>Time 60</th>
+            <th>Mileage</th>
+            <th>Engine</th>
+            <th>Cyl</th>
+            <th>Gearbox</th>
+            <th>Transmission</th>
+            <th>Colour</th>
+            <th>Interior</th>
+            <th>Body</th>
+            <th>Drivetrain</th>
+            <th>Wheel</th>
+            <th>Description</th>
+            <th>Safety</th>
+            <th>Technology</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each list}}
+        <tr>
+            <td><img style="height:3rem" src="/{{this.imagePath}}"></td>
+            <td>{{this.title}}</td>
+            <td>{{this.t2}}</td>
+            <td>{{this.year}}</td>
+            <td>{{this.price}}</td>
+            <td>{{this.priceStr}}</td>
+            <td>{{this.topspeed}}</td>
+            <td>{{this.time60}}</td>
+            <td>{{this.mileage}}</td>
+            <td>{{this.engine}}</td>
+            <td>{{this.cyl}}</td>
+            <td>{{this.gearbox}}</td>
+            <td>{{this.transmission}}</td>
+            <td>{{this.colour}}</td>
+            <td>{{this.interior}}</td>
+            <td>{{this.body}}</td>
+            <td>{{this.drivetrain}}</td>
+            <td>{{this.wheel}}</td>
+            <td>{{this.description}}</td>
+            <td>{{this.safety}}</td>
+            <td>{{this.technology}}</td>
+            <td>
+                <a class="btn btn-outline-danger btn-sm" href="deletegas/{{this._id}}"
+                    onclick="return confirm('Are you sure to delete this record ?');">Delete</a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

@@ -1,0 +1,62 @@
+<table>
+    <tr>
+        <td>
+            <h3>Electric Cars</h3>
+        </td>
+        <td style="margin: 10px; padding-left:650px;"></td>
+        <td>
+            <a class="btn btn-dark" href="addelectric">Add Electric</a>&nbsp;&nbsp;&nbsp;
+            <a class="btn btn-dark" href="/admin/admin_index">Admin</a>
+        </td>
+    </tr>
+</table>
+
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Img</th>
+            <th>Title</th>
+            <th>T1</th>
+            <th>T2</th>
+            <th>Year</th>
+            <th>Price</th>
+            <th>Price(Text Form)</th>
+            <th>Top Speed</th>
+            <th>Time 60</th>
+            <th>Range</th>
+            <th>Color</th>
+            <th>Interior</th>
+            <th>Wheel</th>
+            <th>Description</th>
+            <th>Safety</th>
+            <th>RangeDesc</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each list}}
+        <tr>
+            <td><img style="height:3rem" src="/{{this.imagePath}}"></td>
+            <td>{{this.title}}</td>
+            <td>{{this.t1}}</td>
+            <td>{{this.t2}}</td>
+            <td>{{this.year}}</td>
+            <td>{{this.price}}</td>
+            <td>{{this.priceStr}}</td>
+            <td>{{this.topspeed}}</td>
+            <td>{{this.time60}}</td>
+            <td>{{this.range}}</td>
+            <td>{{this.colour}}</td>
+            <td>{{this.interior}}</td>
+            <td>{{this.wheel}}</td>
+            <td>{{this.description}}</td>
+            <td>{{this.safety}}</td>
+            <td>{{this.rangedesc}}</td>
+            <td>
+                <a class="btn btn-outline-danger btn-sm" href="deleteelectric/{{this._id}}"
+                    onclick="return confirm('Are you sure to delete this record ?');">Delete</a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

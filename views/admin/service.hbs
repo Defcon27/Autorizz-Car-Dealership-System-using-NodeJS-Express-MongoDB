@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{{title}}</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/86198f839e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.0.45/css/materialdesignicons.min.css">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- Custom stylesheets -->
+    <link rel="icon" href="/images/auto_favi.ico" type="image/x-icon" />
+    <link rel='stylesheet' href='/css/service.css' />
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+
+    <section id="navigation">
+
+        <div class="container-fluid" id="nav-container">
+
+            <nav class="navbar navbar-dark navbar-expand-md">
+                <a class="navbar-brand" href="/admin/home">
+                    <img style="height:1.9rem;width:230px" src="/images/t1.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/"> Garage</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/admin/home">Shop</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+
+    </section>
+
+    <div class="container">
+
+
+        <div class="row">
+
+
+            {{#each servicecars}}
+
+
+            <div class="col0">
+
+                <div class="row">
+
+                    <div class="col1">
+                        <img src={{this.customerImage}} alt="model pic">
+                    </div>
+
+                    <div style="width: 600px;" class="col1">
+
+
+                        <div style="margin-top: 15px;" class="input-group mb-3">
+
+                            <div class="input-group-prepend">
+                                <span class="input-group-text dt1" id="basic-addon1">
+                                    <span class="material-icons">person</span>
+                                </span>
+                                <span style="border-bottom-right-radius: 10px;border-top-right-radius: 10px;"
+                                    class="input-group-text dt1" id="basic-addon1">{{this.customerName}}</span>
+                            </div>
+
+                            <div style="margin-left: 20px;" class="input-group-prepend">
+                                <span style="border-bottom-left-radius: 10px;border-top-left-radius: 10px;"
+                                    class="input-group-text dt1" id="basic-addon1">
+                                    <span class="material-icons">directions_car</span>
+                                </span>
+                                <span style="border-bottom-right-radius: 10px;border-top-right-radius: 10px;"
+                                    class="input-group-text dt1" id="basic-addon1">{{this.customerModel}}</span>
+                            </div>
+
+                        </div>
+
+
+
+
+                        <div style="margin-top: 15px;" class="input-group mb-3">
+
+                            <div class="input-group-prepend">
+                                <span class="input-group-text dt1" id="basic-addon1">
+                                    <span class="material-icons">handyman</span>
+                                </span>
+                                <span style="border-bottom-right-radius: 10px;border-top-right-radius: 10px;"
+                                    class="input-group-text dt1" id="basic-addon1">{{this.customerType}}</span>
+                            </div>
+
+
+                            <div style="margin-left: 60px;" class="input-group-prepend">
+                                <span style="border-bottom-left-radius: 10px;border-top-left-radius: 10px;"
+                                    class="input-group-text dt1" id="basic-addon1">
+                                    <span class="material-icons">assignment_turned_in</span>
+                                </span>
+
+                                <span style="border-bottom-right-radius: 10px;border-top-right-radius: 10px;"
+                                    class="input-group-text dt1" id="basic-addon1">{{this.customerDone}}</span>
+                            </div>
+
+
+                            <div style="margin-left: 60px;" class="input-group-prepend">
+                                <span style="border-bottom-left-radius: 10px;border-top-left-radius: 10px;"
+                                    class="input-group-text dt1" id="basic-addon1">
+                                    <span class="material-icons">monetization_on</span>
+                                </span>
+
+                                <span style="border-bottom-right-radius: 10px;border-top-right-radius: 10px;"
+                                    class="input-group-text dt1" id="basic-addon1">{{this.customerBill}}</span>
+                            </div>
+
+                        </div>
+
+
+                        <div style="margin-top: 15px;" class="input-group mb-3">
+
+
+                            <div class="input-group-prepend">
+                                <span class="input-group-text dt1" id="basic-addon1">
+                                    <span class="material-icons">local_phone</span>
+                                </span>
+                                <span style="border-bottom-right-radius: 10px;border-top-right-radius: 10px;"
+                                    class="input-group-text dt1" id="basic-addon1">{{this.customerPhone}}</span>
+                            </div>
+
+                            <div style="margin-left: 100px;" class="input-group-prepend">
+                                <span style="border-bottom-left-radius: 10px;border-top-left-radius: 10px;"
+                                    class="input-group-text dt1" id="basic-addon1">
+                                    <span class="material-icons">email</span></span>
+                                <span style="border-bottom-right-radius: 10px;border-top-right-radius: 10px;"
+                                    class="input-group-text dt1" id="basic-addon1">{{this.customerEmail}}</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="emailbutton">
+                            <button id="button2" type="submit" class="btn btn-outline-dark">Message
+                                Customer</button>
+                            <a href="/home/service/email"><button id="button1" type="submit"
+                                    class="btn btn-outline-dark">Email Customer</button></a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            {{/each}}
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
