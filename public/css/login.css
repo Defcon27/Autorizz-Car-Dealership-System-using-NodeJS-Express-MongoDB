@@ -1,0 +1,76 @@
+body{
+    background-image: url('/images/login.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.title{
+    color: #4a4a4a;
+    font-weight: 400;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.loginlogo{
+    margin-top: 50px;
+    width: 260px;
+}
+
+.input{
+    margin-top: 30px;
+}
+
+
+.loginForm{
+    background: rgb(238, 238, 238,0.9);
+    border-style: solid;
+    border-color: rgb(238, 238, 238,0.9);
+    border-width: 2.5px;
+    border-radius: 18px;
+    width: 400px;
+    margin-top: 30px;
+    padding: 35px;
+}
+
+
+.loginForm:hover{
+    background: #eee;
+    border-style: solid;
+    border-color: #eee;
+    border-width: 2.5px;
+    border-radius: 18px;
+    width: 400px;
+    margin-top: 30px;
+    padding: 35px;
+}
+
+.loginButton{
+    margin-top: 30px;
+}
+
+#l{
+    width: 325px;
+    background-color: #3c4349;
+    color: white;
+    border-width: 2px;
+    border-radius: 25px;
+    font-size: 15px;
+}
+
+
+#l:hover{
+    width: 325px;
+    background-color: #262a2e;
+    color: white;
+    border-width: 2px;
+    border-radius: 25px;
+    font-size: 15px;
+}
+
+
+.erroralert{
+    
+    padding-top:5px ;
+    padding-bottom: 5px;
+}
+
