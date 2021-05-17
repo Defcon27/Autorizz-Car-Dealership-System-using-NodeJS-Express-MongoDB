@@ -1,0 +1,34 @@
+body {
+    background-image: url("/images/admin.jpg");
+    background-size: cover;
+}
+
+/* Nav */
+
+img {
+    margin-bottom: 2rem;
+}
+
+.admin-nav a {
+    padding: 4% 5rem;
+    color: azure !important;
+    font-size: 1.5rem;
+    text-decoration: none !important;
+}
+
+.admin-nav .btn {
+    margin: 2% 0%;
+    padding: 1.5% 2% !important;
+    border-radius: 2.5rem !important;
+}
+
+.admin-nav {
+    margin-top: 4.5rem;
+    height: 100%;
+    justify-content: center;
+}
+
+.record_list {
+    width: 240%;
+    margin: 2rem 1rem;
+}
