@@ -1,7 +1,7 @@
 var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 
-var servicingSchema = new Schema({
+var serviceModelSchema = new Schema({
     customerImage: { type: String, required: true },
     customerName: { type: String, required: true },
     customerEmail: { type: String, required: true },
@@ -13,4 +13,4 @@ var servicingSchema = new Schema({
     Date: { type: String, required: true }
 });
 
-module.exports = mongoose.model("servicing", servicingSchema, "servicing");
+module.exports = mongoose.model("service", serviceModelSchema, "service");
