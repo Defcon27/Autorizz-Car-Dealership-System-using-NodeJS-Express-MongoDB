@@ -5,7 +5,8 @@ const ElectricModel = require("../models/ElectricModel");
 const GasModel = require('../models/GasModel');
 const ServiceModel = require('../models/ServiceModel');
 const CustomerModel = require('../models/CustomerModel');
-const UserModel = require("../models/UserModel")
+const UserModel = require("../models/UserModel");
+const sendEmail = require("../utils/mailer");
 
 // Set Image Storage
 const storage = multer.diskStorage({
@@ -66,15 +67,22 @@ router.get('/home', function (req, res) {
 
 
 // GET Service Page
-router.get('/service', async function(req, res){
+router.get('/service', async function (req, res) {
 
     let servicecars = await ServiceModel.find();
     console.log(servicecars);
-    res.render("admin/service.hbs", {servicecars:servicecars, layout:false});
+    res.render("admin/service.hbs", { servicecars: servicecars, layout: false });
 
 });
 
+// GET send email
+router.get('/service/email/:mailid', async function (req, res) {
 
+    var client_email = req.params.mailid;
+    var mail_status = await sendEmail(client_email);
+    console.log("Email Status - " + mail_status);
+    res.redirect('/admin/service');
+});
 
 
 
