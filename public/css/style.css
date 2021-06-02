@@ -38,8 +38,12 @@
     }
 
     .navbar-brand img{
-        height: 1.6rem !important;
+        height: 7vw !important;
     }
+}
+
+.navbar-brand img{
+    height: 2rem;
 }
 
 .nav-catg:hover{
