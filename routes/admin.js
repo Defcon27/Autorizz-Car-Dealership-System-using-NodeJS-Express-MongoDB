@@ -61,7 +61,7 @@ router.post("/login", async function (req, res) {
 
 // GET - Home Page
 router.get('/home', function (req, res) {
-    res.sendFile(__dirname + "/home.html");
+    res.sendFile(__dirname + "/admin_home.html");
 });
 
 
