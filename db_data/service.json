@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "5e80767146a3c9c551af42c7"
+  },
+  "customerImage": "/images/1.JPG",
+  "customerName": "Matt Daemon",
+  "customerEmail": "hemanthkollipara95@gmail.com",
+  "customerPhone": "9440123487",
+  "customerModel": "2020 Tesla Model S Performance Edition",
+  "customerType": "Washing Service",
+  "customerDone": "Yes",
+  "customerBill": "$75",
+  "Date": "18/02/2020"
+},{
+  "_id": {
+    "$oid": "5e8081f246a3c9c551af44e4"
+  },
+  "customerImage": "/images/3.jpg",
+  "customerName": "Christian Bale",
+  "customerEmail": "bale.christian@gmail.com",
+  "customerPhone": "7430153387",
+  "customerModel": "2019 Tesla Model 3 Standard Plus",
+  "customerType": "Battery Check",
+  "customerDone": "Yes",
+  "customerBill": "$125",
+  "Date": "22/02/2020"
+},{
+  "_id": {
+    "$oid": "5e80e02846a3c9c551af5348"
+  },
+  "customerImage": "/images/6.jpg",
+  "customerName": "Bruce Wayne",
+  "customerEmail": "wayne.bruce@gmail.com",
+  "customerPhone": "8444153287",
+  "customerModel": "2019 Tesla Model X Standard Plus",
+  "customerType": "Air Condition Service",
+  "customerDone": "Yes",
+  "customerBill": "$300",
+  "Date": "03/02/2020"
+}]
