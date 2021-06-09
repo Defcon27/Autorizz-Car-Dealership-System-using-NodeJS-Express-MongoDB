@@ -7,13 +7,13 @@ async function sendEmail(clientEmail) {
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'defcon.sentinal95@gmail.com',
-            pass: 'Hemanth@2000'
+            user: 'xxxx@gmail.com',
+            pass: 'xxxx'
         }
     });
 
     var mailOptions = {
-        from: "defcon.sentinal95@gmail.com",
+        from: "xxxx@gmail.com",
         to: clientEmail,
         subject: "Autorizz Service Update",
         html: htmlTemp
