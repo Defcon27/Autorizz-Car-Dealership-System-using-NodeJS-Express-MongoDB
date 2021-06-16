@@ -11,6 +11,7 @@
 ![GitHub issues](https://img.shields.io/github/issues/Defcon27/Autorizz-Car-Dealership-System-using-NodeJS-Express-MongoDB?label=Issues&color=yellow&logo=github&style=flat)
 ![GitHub License](https://img.shields.io/github/license/defcon27/Autorizz-Car-Dealership-System-using-NodeJS-Express-MongoDB?label=License)
 [![GitHub All Releases](https://img.shields.io/github/downloads/Defcon27/Autorizz-Car-Dealership-System-using-NodeJS-Express-MongoDB/total?label=Downloads&color=red)](https://github.com/Defcon27/Autorizz-Car-Dealership-System-using-NodeJS-Express-MongoDB/releases)
+![Visits Badge](https://badges.pufler.dev/visits/Defcon27/Autorizz-Car-Dealership-System-using-NodeJS-Express-MongoDB?color=14BF96)
 <!-- [![GitHub pull requests](https://img.shields.io/github/issues-pr/Defcon27/Autorizz-Car-Dealership-System-using-NodeJS-Express-MongoDB)](https://github.com/sarthakpranesh/cosmos.ReactNative/pulls) -->
 
 </div>
