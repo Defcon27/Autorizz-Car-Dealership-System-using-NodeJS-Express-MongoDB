@@ -65,6 +65,11 @@
     <img height="350px" width="175px" src="docs/mobile/mob_ele1.png" alt="Elec Mob" /> <img height="350px" width="175px" src="docs/mobile/mob_ele2.png" alt="Elec Mob" /> <img height="350px" width="175px" src="docs/mobile/mob_ele_bk.png" alt="Elec Mob" /> <img height="350px" width="175px" src="docs/mobile/mob_ele_bki.png" alt="Elec Mob" /> 
 </div>
 
+<div>
+    <h4>Gas</h4>
+    <img height="350px" width="175px" src="docs/mobile/mob_gas1.png" alt="Gas Mob" /> <img height="350px" width="175px" src="docs/mobile/mob_gas2.png" alt="Gas Mob" /> <img height="350px" width="175px" src="docs/mobile/mod_gas_bk.png" alt="Gas Mob" /> <img height="350px" width="175px" src="docs/mobile/mob_gas_bki.png" alt="Gas Mob" /> 
+</div>
+
 
 <br>
 <br>
