@@ -54,9 +54,19 @@
     <img width="600px" src="docs/assets/gas_booking.png" alt="Gas Index" />
 
 </div>
+<br>
+<br>
+<br>
 
 
+##  📱 Mobile Responsive
+<div>
+    <h4>Electric</h4>
+    <img height="350px" width="175px" src="docs/mobile/mob_ele1.png" alt="Elec Mob" /> <img height="350px" width="175px" src="docs/mobile/mob_ele2.png" alt="Elec Mob" /> <img height="350px" width="175px" src="docs/mobile/mob_ele_bk.png" alt="Elec Mob" /> <img height="350px" width="175px" src="docs/mobile/mob_ele_bki.png" alt="Elec Mob" /> 
+</div>
 
+
+<br>
 <br>
 
 ## 📋 Instructions
