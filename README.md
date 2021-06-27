@@ -70,6 +70,20 @@
     <img height="350px" width="175px" src="docs/mobile/mob_gas1.png" alt="Gas Mob" /> <img height="350px" width="175px" src="docs/mobile/mob_gas2.png" alt="Gas Mob" /> <img height="350px" width="175px" src="docs/mobile/mod_gas_bk.png" alt="Gas Mob" /> <img height="350px" width="175px" src="docs/mobile/mob_gas_bki.png" alt="Gas Mob" /> 
 </div>
 
+### 🛡️ Admin End
+<div>
+<h4>Login</h4>
+<img width="600px" src="docs/assets/admin_login.png" alt="Home" />
+<h4>Home</h4>
+<img width="600px" src="docs/assets/admin_home.png" alt="Home" />
+<h4>Manage Service</h4>
+<img width="600px" src="docs/assets/admin_service.png" alt="Home" />
+<h4>Manage Models</h4>
+<img width="600px" src="docs/assets/admin_models.png" alt="Home" />
+<h4>Manage Customers</h4>
+<img width="600px" src="docs/assets/admin_cust.png" alt="Home" />
+</div>
+
 
 <br>
 <br>
