@@ -110,6 +110,7 @@
 #### General
 1. Install Dependencies using `npm install`
 2. Make sure `MongoDB` server is running
+3. Create all the required `collections` and fill in the data from `db_data`
 
 
 #### Local
