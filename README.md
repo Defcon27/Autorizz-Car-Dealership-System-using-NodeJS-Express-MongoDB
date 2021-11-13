@@ -1,6 +1,8 @@
 <div align="center">
 
 <br>
+
+<img src="docs/assets/dealership.png" height="300" alt="Autorizz" /><br>
 <img src="docs/assets/autorizz.png" height="80" alt="Autorizz" />
 
 # Car-Dealership-System-using-NodeJS-Express-MongoDB
