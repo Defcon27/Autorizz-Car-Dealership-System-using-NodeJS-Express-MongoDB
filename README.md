@@ -2,7 +2,7 @@
 
 <br>
 
-<img src="docs/assets/dealership.png" height="300" alt="Autorizz" /><br>
+<img src="docs/assets/dealership_.png" height="300" alt="Autorizz" /><br>
 <img src="docs/assets/autorizz.png" height="80" alt="Autorizz" />
 
 # Car-Dealership-System-using-NodeJS-Express-MongoDB
@@ -83,7 +83,7 @@
 <h4>Login</h4>
 <img width="600px" src="docs/assets/admin_login.png" alt="Home" />
 <h4>Home</h4>
-<img width="600px" src="docs/assets/admin_home.png" alt="Home" />
+<img width="600px" src="docs/assets/admin_home_.png" alt="Home" />
 <h4>Manage Service</h4>
 <img width="600px" src="docs/assets/admin_service.png" alt="Home" />
 <h4>Manage Models</h4>
