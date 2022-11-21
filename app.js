@@ -17,7 +17,11 @@ const app = express();
 //Connecting to Mongodb
 const db = async () => {
     try {
-        const conn = await mongoose.connect('mongodb://localhost:27017/autorizz', {
+        const connString = isDocker() ?
+            `mongodb://${process.env.MONGODB_USER}:${process.env.MONGODB_PASSWORD}
+            @mongodb:${process.env.MONGODB_DOCKER_PORT}/${process.env.MONGODB_DATABASE}?authSource=admin`:
+            'mongodb://localhost:27017/autorizz';
+        await mongoose.connect(connString, {
             useNewUrlParser: true,
             useUnifiedTopology: true,
             useFindAndModify: false

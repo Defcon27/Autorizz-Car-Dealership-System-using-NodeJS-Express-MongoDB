@@ -127,4 +127,12 @@
 2. Open Terminal in the app folder
 3. Run `npm start` or `nodemon start` (if nodemon is preinstalled)
 4. Launch client app in `localhost:5000`
-4. Launch admin app in `localhost:5000/admin`
+5. Launch admin app in `localhost:5000/admin`
+
+
+#### Docker
+1. Create a `.env` file, and copy the content from `.env.example`.
+2. Run following command to start MongoDB and Node server.
+```
+docker-compose up
+```
